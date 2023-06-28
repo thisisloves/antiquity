@@ -1,7 +1,11 @@
 # Header
 menu:
   首页: /
-  归档: /archives
+  归档: archives
+  图表: https://thisisloves.github.io/chart
+  购物: https://thisisloves.github.io/shop/
+  半帘梦: https://thisisloves.github.io/cherry
+  个人中心: https://thisisloves.github.io/userInfo/index.html
 
 rss: /atom.xml
 nav: right
@@ -25,9 +29,9 @@ widgets:
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
-# - category
-# - tagcloud
-# - archive
+- category
+- tagcloud
+- archive
 
 # widget behavior
 archive_type: 'monthly'
@@ -35,33 +39,53 @@ show_count: false
 
 # Background
 # background_image: /images/bg.jpeg
-background_title: 图片来自网络
+# background_title: 图片来自网络
 
 #Userinfo
-author: 一路烟霞
-slogan: 特别耐撕的小前端，资深的打酱油攻城狮。
+author: Promise
+slogan: Do not, for one repulse, give up the purpose that you resolved to effect.
 # avatar: /images/code-title.png
-avatar_title: 图片来自网络
+# avatar_title: 图片来自网络
 
 # Article code panel: cloud doorframe mac
 highlightPanel: doorframe
 
 #Gitment
 gitment:
-  owner: 
-  repo: 
-  client_id: 
-  client_secret: 
+  owner: thisisloves # 必填项, 你的GitHub ID
+  repo:  # 必填项  你的存储评论的repo
+  client_id:   # 必填项
+  client_secret:  # 必填项
+  comment:
 
 # Miscellaneous
 google_analytics:
 gauges_analytics:
 google_site_verification: 
 baidu_site_verification: 
-favicon: /images/default-avatar.jpeg
+favicon: /images/default-avatar2.jpeg
 twitter:
 google_plus:
 fb_admins:
 fb_app_id:
 keywords:
 
+  # 看板动画
+live2d:
+  enable: true
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  gMode: false
+  debug: false
+  model:
+    use: live2d-widget-model-epsilon2_1  #模板目录，在node_modules里
+  display:
+    position: left
+    width: 300 
+    height: 600
+  mobile:
+    show: false  #是否在手机进行显示
+  react:
+      opacityDefault: 0.7
+      opacityOnHover: 0.2
