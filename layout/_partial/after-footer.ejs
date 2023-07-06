@@ -2,10 +2,15 @@
 
 <script src="https://thisisloves.github.io/Infatuation/js/jquery-2.0.3.min.js"></script>
 <script src="https://thisisloves.github.io/Infatuation/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script>
-<% if (theme.fancybox){ %>
+
+<!-- <% if (theme.fancybox){ %>
   <%- css('fancybox/jquery.fancybox') %>
   <%- js('fancybox/jquery.fancybox.pack') %>
-<% } %>
+<% } %> -->
+<link href="https://thisisloves.github.io/Infatuation/fancybox/jquery.fancybox.css"/>
+<script src="https://thisisloves.github.io/Infatuation/fancybox/jquery.fancybox.pack.js"></script>
+<script src="https://thisisloves.github.io/Infatuation/fancybox/jquery.fancybox.js"></script>
 
-<%- js('js/script') %>
+<script src="https://thisisloves.github.io/Infatuation/js/script.js"></script>
+<!-- <%- js('js/script') %> -->
 <%- partial('gauges-analytics') %>

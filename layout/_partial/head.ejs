@@ -33,12 +33,16 @@
   <% if (theme.rss){ %>
     <link rel="alternate" href="<%= url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml">
   <% } %>
-  <% if (theme.favicon){ %>
-    <link rel="icon" href="/images/2019/05/20/5ce292afb9f6b42428.jpeg">
-  <% } %>
+  <!-- <% if (theme.favicon){ %> -->
+    <link rel="icon" href="https://thisisloves.github.io/Infatuation/images/2019/05/20/5ce292afb9f6b42428.jpeg">
+  <!-- <% } %> -->
   <% if (config.highlight.enable){ %>
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   <% } %>
-  <%- css('css/style') %>
-  <%- css('css/highlight') %>
+  <!-- <%- css('css/style') %>
+  <%- css('css/highlight') %> -->
+
+  <link rel="stylesheet" href="https://thisisloves.github.io/Infatuation/css/style.css">
+  <link rel="stylesheet" href="https://thisisloves.github.io/Infatuation/css/highlight.css">
+
 </head>
